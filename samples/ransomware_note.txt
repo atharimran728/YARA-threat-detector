@@ -1,0 +1,3 @@
+YOUR FILES HAVE BEEN LOCKED
+All your documents are now encrypted.
+Extension used: .locked

@@ -1,0 +1,62 @@
+[
+    {
+        "timestamp": "2025-12-06T06:32:29.858949",
+        "file_name": "basic_malware.txt",
+        "file_path": "./samples\\basic_malware.txt",
+        "sha256": "02e53e0180cf0a8e6f5388f87d4824957950c54405c7ead4347e8e32b46cf3cc",
+        "yara_matches": [
+            {
+                "rule": "malicious_string",
+                "severity": "medium",
+                "category": "Malware Artifact",
+                "mitre": "T1204"
+            }
+        ],
+        "heuristics": []
+    },
+    {
+        "timestamp": "2025-12-06T06:32:29.883088",
+        "file_name": "encoded_ps.txt",
+        "file_path": "./samples\\encoded_ps.txt",
+        "sha256": "192b45c8305873032065f33e1260f0819f003beee28530df495274fdaec7a521",
+        "yara_matches": [
+            {
+                "rule": "powershell_encoded_command",
+                "severity": "high",
+                "category": "Command Execution",
+                "mitre": "T1059.001"
+            }
+        ],
+        "heuristics": []
+    },
+    {
+        "timestamp": "2025-12-06T06:32:29.886408",
+        "file_name": "obfuscated.js",
+        "file_path": "./samples\\obfuscated.js",
+        "sha256": "55d89234aa9234f0e9056a1e9162d1bda5ddf3d746fbb04029d975360fb96100",
+        "yara_matches": [
+            {
+                "rule": "suspicious_js_obfuscation",
+                "severity": "medium",
+                "category": "Initial Access",
+                "mitre": "T1059.007"
+            }
+        ],
+        "heuristics": []
+    },
+    {
+        "timestamp": "2025-12-06T06:32:29.888070",
+        "file_name": "ransomware_note.txt",
+        "file_path": "./samples\\ransomware_note.txt",
+        "sha256": "83c340b3bebe8b7e31911154443f1391eb77956448b0d484cce6613ea879e374",
+        "yara_matches": [
+            {
+                "rule": "possible_ransomware_config",
+                "severity": "critical",
+                "category": "Data Encryption",
+                "mitre": "T1486"
+            }
+        ],
+        "heuristics": []
+    }
+]
