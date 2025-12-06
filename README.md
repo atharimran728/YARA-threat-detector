@@ -1,6 +1,6 @@
 # YARA Threat Detector
 
-A compact threat-detection toolkit built around YARA, enriched with rule metadata extraction, heuristic scanning, HTML reporting, and a curated malicious sample set for testing. Designed for analysts who want clarity, speed, and practical detection logic — without unnecessary complexity.
+A compact threat-detection toolkit built around YARA, enriched with rule metadata extraction, heuristic scanning, HTML reporting, and a curated malicious sample set for testing. Designed for analysts who want clarity, speed, and practical detection logic without unnecessary complexity.
 
 ---
 
@@ -38,6 +38,11 @@ yara-threat-detector/
 │
 ├── rules/
 │ └── all-rules.yar
+| └── base64_webshell.yar
+| └── malicious_string.yar
+| └── possible_ransomware_config.yar
+| └── powershell_encoded_command.yar
+| └── suspicious_js_obfuscation.yar
 │
 ├── samples/
 │ ├── basic_malware.txt
@@ -66,8 +71,8 @@ python yara_scanner.py
 
 ### Outputs:
 - terminal detections
-- alerts.json
-- report.html
+- `alerts.json`
+- `report.html`
 
 ## Add Your Own Rules
 
